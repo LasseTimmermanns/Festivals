@@ -15,6 +15,20 @@
 <body>
   <div class="wrapper">
     <?php
+        function getTextColor($hex) {
+          $r = hexdec(substr($hex, 0, 2));
+          $g = hexdec(substr($hex, 2, 2));
+          $b = hexdec(substr($hex, 4, 2));
+        
+          $luma = (0.299 * $r + 0.587 * $g + 0.114 * $b) / 255;
+        
+          if ($luma > 0.5) {
+            return "#000000"; // black
+          } else {
+            return "#ffffff"; // white
+          }
+        }
+
         $servername = "localhost";
         $username = "festival";
         $password = "YUcrXDm87tMzmSh";
@@ -35,7 +49,7 @@
           while($row = mysqli_fetch_assoc($result)) {
             echo 
             '
-              <div class="festival" style="background:' . $row["color"] . '">
+              <div class="festival" style="background:' . $row["color"] . '; color:' . getTextColor($row["color"]) . '">
                 <div class="name">' . $row["festivalname"] . '</div>
                 <div class="ort"><img src="img\location.svg">' . $row["ort"] . '</div>
                 <div class="preis"><img src="img\preis.svg">' . $row["preis"] . '</div>
@@ -43,7 +57,7 @@
                 <div class="erstellungsdatum"><img src="img\bookmark.svg">' . $row["erstellungsdatum"] . '</div>
               </div>
             ';
-          
+            
           }
         } else {
           echo "Es finden in nächster Zeit keine Festivals statt..";
