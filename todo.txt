@@ -1,0 +1,7 @@
+Frontend Erstellen
+    hübsch
+    erstellen von Daten
+    anzeigen von Daten
+    Adminpanel
+        Login
+        
