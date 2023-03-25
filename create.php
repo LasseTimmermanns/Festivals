@@ -34,6 +34,13 @@ if (!$conn) {
 $sql = "INSERT INTO festivals (festivalname, ort, preis, datum)
 VALUES ('". $name ."', '". $ort ."', '". $preis ."', '". $date ."')";
 
+
+if (mysqli_query($conn, $sql)) {
+    echo "New record created successfully";
+  } else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+  }
+
 mysqli_close($conn);
 
 header("Location: create_form.php");

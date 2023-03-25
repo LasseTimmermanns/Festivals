@@ -17,9 +17,9 @@
     ?>
 
     <div class="wrapper">
-        <div class="big create"><img src="img/add.svg"></div>
-        <div class="big update"><img src="img/update.svg"></div>
-        <div class="big delete"><img src="img/delete.svg"></div>
+        <div class="big create" onclick="location.href='create_form.php';"><img src="img/add.svg"></div>
+        <div class="big update" onclick="location.href='#';"><img src="img/update.svg"></div>
+        <div class="big delete" onclick="location.href='#';"><img src="img/delete.svg"></div>
     </div>
 </body>
 </html>
