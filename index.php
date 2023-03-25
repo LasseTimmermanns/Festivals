@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/general.css">
+
 </head>
 <body>
     <?php
@@ -34,5 +40,191 @@
         
         mysqli_close($conn);
     ?>
+  <div class="wrapper">
+    <div class="festival">
+      <div class="name">Spektrum</div>
+      <div class="ort"><img src="img\location.svg">Hamburg</div>
+      <div class="preis"><img src="img\preis.svg">Preis</div>
+      <div class="datum"><img src="img\date.svg">Datum</div>
+      <div class="erstellungsdatum"><img src="img\bookmark.svg">Erstellungsdatum</div>
+    </div>
+    <div class="festival">
+      <div class="name">Spektrum</div>
+      <div class="ort"><img src="img\location.svg">Hamburg</div>
+      <div class="preis"><img src="img\preis.svg">Preis</div>
+      <div class="datum"><img src="img\date.svg">Datum</div>
+      <div class="erstellungsdatum"><img src="img\bookmark.svg">Erstellungsdatum</div>
+    </div>
+    <div class="festival">
+      <div class="name">Spektrum</div>
+      <div class="ort"><img src="img\location.svg">Hamburg</div>
+      <div class="preis"><img src="img\preis.svg">Preis</div>
+      <div class="datum"><img src="img\date.svg">Datum</div>
+      <div class="erstellungsdatum"><img src="img\bookmark.svg">Erstellungsdatum</div>
+    </div>
+    <div class="festival">
+      <div class="name">Spektrum</div>
+      <div class="ort"><img src="img\location.svg">Hamburg</div>
+      <div class="preis"><img src="img\preis.svg">Preis</div>
+      <div class="datum"><img src="img\date.svg">Datum</div>
+      <div class="erstellungsdatum"><img src="img\bookmark.svg">Erstellungsdatum</div>
+    </div>
+    <div class="festival">
+      <div class="name">Spektrum</div>
+      <div class="ort"><img src="img\location.svg">Hamburg</div>
+      <div class="preis"><img src="img\preis.svg">Preis</div>
+      <div class="datum"><img src="img\date.svg">Datum</div>
+      <div class="erstellungsdatum"><img src="img\bookmark.svg">Erstellungsdatum</div>
+    </div>
+    <div class="festival">
+      <div class="name">Spektrum</div>
+      <div class="ort"><img src="img\location.svg">Hamburg</div>
+      <div class="preis"><img src="img\preis.svg">Preis</div>
+      <div class="datum"><img src="img\date.svg">Datum</div>
+      <div class="erstellungsdatum"><img src="img\bookmark.svg">Erstellungsdatum</div>
+    </div>
+    <div class="festival">
+      <div class="name">Spektrum</div>
+      <div class="ort"><img src="img\location.svg">Hamburg</div>
+      <div class="preis"><img src="img\preis.svg">Preis</div>
+      <div class="datum"><img src="img\date.svg">Datum</div>
+      <div class="erstellungsdatum"><img src="img\bookmark.svg">Erstellungsdatum</div>
+    </div>
+    <div class="festival">
+      <div class="name">Spektrum</div>
+      <div class="ort"><img src="img\location.svg">Hamburg</div>
+      <div class="preis"><img src="img\preis.svg">Preis</div>
+      <div class="datum"><img src="img\date.svg">Datum</div>
+      <div class="erstellungsdatum"><img src="img\bookmark.svg">Erstellungsdatum</div>
+    </div>
+    <div class="festival">
+      <div class="name">Spektrum</div>
+      <div class="ort"><img src="img\location.svg">Hamburg</div>
+      <div class="preis"><img src="img\preis.svg">Preis</div>
+      <div class="datum"><img src="img\date.svg">Datum</div>
+      <div class="erstellungsdatum"><img src="img\bookmark.svg">Erstellungsdatum</div>
+    </div>
+    <div class="festival">
+      <div class="name">Spektrum</div>
+      <div class="ort"><img src="img\location.svg">Hamburg</div>
+      <div class="preis"><img src="img\preis.svg">Preis</div>
+      <div class="datum"><img src="img\date.svg">Datum</div>
+      <div class="erstellungsdatum"><img src="img\bookmark.svg">Erstellungsdatum</div>
+    </div>
+    <div class="festival">
+      <div class="name">Spektrum</div>
+      <div class="ort"><img src="img\location.svg">Hamburg</div>
+      <div class="preis"><img src="img\preis.svg">Preis</div>
+      <div class="datum"><img src="img\date.svg">Datum</div>
+      <div class="erstellungsdatum"><img src="img\bookmark.svg">Erstellungsdatum</div>
+    </div>
+    <div class="festival">
+      <div class="name">Spektrum</div>
+      <div class="ort"><img src="img\location.svg">Hamburg</div>
+      <div class="preis"><img src="img\preis.svg">Preis</div>
+      <div class="datum"><img src="img\date.svg">Datum</div>
+      <div class="erstellungsdatum"><img src="img\bookmark.svg">Erstellungsdatum</div>
+    </div>
+    <div class="festival">
+      <div class="name">Spektrum</div>
+      <div class="ort"><img src="img\location.svg">Hamburg</div>
+      <div class="preis"><img src="img\preis.svg">Preis</div>
+      <div class="datum"><img src="img\date.svg">Datum</div>
+      <div class="erstellungsdatum"><img src="img\bookmark.svg">Erstellungsdatum</div>
+    </div>
+
+    <div class="festival">
+      <div class="name">Spektrum</div>
+      <div class="ort"><img src="img\location.svg">Hamburg</div>
+      <div class="preis"><img src="img\preis.svg">Preis</div>
+      <div class="datum"><img src="img\date.svg">Datum</div>
+      <div class="erstellungsdatum"><img src="img\bookmark.svg">Erstellungsdatum</div>
+    </div>
+    <div class="festival">
+      <div class="name">Spektrum</div>
+      <div class="ort"><img src="img\location.svg">Hamburg</div>
+      <div class="preis"><img src="img\preis.svg">Preis</div>
+      <div class="datum"><img src="img\date.svg">Datum</div>
+      <div class="erstellungsdatum"><img src="img\bookmark.svg">Erstellungsdatum</div>
+    </div>
+    <div class="festival">
+      <div class="name">Spektrum</div>
+      <div class="ort"><img src="img\location.svg">Hamburg</div>
+      <div class="preis"><img src="img\preis.svg">Preis</div>
+      <div class="datum"><img src="img\date.svg">Datum</div>
+      <div class="erstellungsdatum"><img src="img\bookmark.svg">Erstellungsdatum</div>
+    </div>
+    <div class="festival">
+      <div class="name">Spektrum</div>
+      <div class="ort"><img src="img\location.svg">Hamburg</div>
+      <div class="preis"><img src="img\preis.svg">Preis</div>
+      <div class="datum"><img src="img\date.svg">Datum</div>
+      <div class="erstellungsdatum"><img src="img\bookmark.svg">Erstellungsdatum</div>
+    </div>
+    <div class="festival">
+      <div class="name">Spektrum</div>
+      <div class="ort"><img src="img\location.svg">Hamburg</div>
+      <div class="preis"><img src="img\preis.svg">Preis</div>
+      <div class="datum"><img src="img\date.svg">Datum</div>
+      <div class="erstellungsdatum"><img src="img\bookmark.svg">Erstellungsdatum</div>
+    </div>
+
+    <div class="festival">
+      <div class="name">Spektrum</div>
+      <div class="ort"><img src="img\location.svg">Hamburg</div>
+      <div class="preis"><img src="img\preis.svg">Preis</div>
+      <div class="datum"><img src="img\date.svg">Datum</div>
+      <div class="erstellungsdatum"><img src="img\bookmark.svg">Erstellungsdatum</div>
+    </div>
+    <div class="festival">
+      <div class="name">Spektrum</div>
+      <div class="ort"><img src="img\location.svg">Hamburg</div>
+      <div class="preis"><img src="img\preis.svg">Preis</div>
+      <div class="datum"><img src="img\date.svg">Datum</div>
+      <div class="erstellungsdatum"><img src="img\bookmark.svg">Erstellungsdatum</div>
+    </div>
+    <div class="festival">
+      <div class="name">Spektrum</div>
+      <div class="ort"><img src="img\location.svg">Hamburg</div>
+      <div class="preis"><img src="img\preis.svg">Preis</div>
+      <div class="datum"><img src="img\date.svg">Datum</div>
+      <div class="erstellungsdatum"><img src="img\bookmark.svg">Erstellungsdatum</div>
+    </div>
+    <div class="festival">
+      <div class="name">Spektrum</div>
+      <div class="ort"><img src="img\location.svg">Hamburg</div>
+      <div class="preis"><img src="img\preis.svg">Preis</div>
+      <div class="datum"><img src="img\date.svg">Datum</div>
+      <div class="erstellungsdatum"><img src="img\bookmark.svg">Erstellungsdatum</div>
+    </div>
+    <div class="festival">
+      <div class="name">Spektrum</div>
+      <div class="ort"><img src="img\location.svg">Hamburg</div>
+      <div class="preis"><img src="img\preis.svg">Preis</div>
+      <div class="datum"><img src="img\date.svg">Datum</div>
+      <div class="erstellungsdatum"><img src="img\bookmark.svg">Erstellungsdatum</div>
+    </div>
+    <div class="festival">
+      <div class="name">Spektrum</div>
+      <div class="ort"><img src="img\location.svg">Hamburg</div>
+      <div class="preis"><img src="img\preis.svg">Preis</div>
+      <div class="datum"><img src="img\date.svg">Datum</div>
+      <div class="erstellungsdatum"><img src="img\bookmark.svg">Erstellungsdatum</div>
+    </div>
+    <div class="festival">
+      <div class="name">Spektrum</div>
+      <div class="ort"><img src="img\location.svg">Hamburg</div>
+      <div class="preis"><img src="img\preis.svg">Preis</div>
+      <div class="datum"><img src="img\date.svg">Datum</div>
+      <div class="erstellungsdatum"><img src="img\bookmark.svg">Erstellungsdatum</div>
+    </div>
+    <div class="festival">
+      <div class="name">Spektrum</div>
+      <div class="ort"><img src="img\location.svg">Hamburg</div>
+      <div class="preis"><img src="img\preis.svg">Preis</div>
+      <div class="datum"><img src="img\date.svg">Datum</div>
+      <div class="erstellungsdatum"><img src="img\bookmark.svg">Erstellungsdatum</div>
+    </div>
+  </div>
 </body>
 </html>
