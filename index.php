@@ -13,6 +13,7 @@
 
 </head>
 <body>
+  <div class="wrapper">
     <?php
         $servername = "localhost";
         $username = "festival";
@@ -32,19 +33,15 @@
         if (mysqli_num_rows($result) > 0) {
           // output data of each row
           while($row = mysqli_fetch_assoc($result)) {
-            // echo "Name: " . $row["festivalname"]. " - Ort: " . $row["ort"]. " - Preis: " . $row["preis"]. " - Datum: " . $row["datum"]. " - Erstellungsdatum: " . $row["erstellungsdatum"]. "<br>";
-          
             echo 
             '
-            <div class="wrapper">
-              <div class="festival" style="background-color:"' . $row["color"] . '>
+              <div class="festival" style="background:' . $row["color"] . '">
                 <div class="name">' . $row["festivalname"] . '</div>
                 <div class="ort"><img src="img\location.svg">' . $row["ort"] . '</div>
                 <div class="preis"><img src="img\preis.svg">' . $row["preis"] . '</div>
                 <div class="datum"><img src="img\date.svg">' . $row["datum"] . '</div>
                 <div class="erstellungsdatum"><img src="img\bookmark.svg">' . $row["erstellungsdatum"] . '</div>
               </div>
-            </div>
             ';
           
           }
@@ -54,14 +51,6 @@
         
         mysqli_close($conn);
     ?>
-  <!-- <div class="wrapper">
-    <div class="festival">
-      <div class="name">Spektrum</div>
-      <div class="ort"><img src="img\location.svg">Hamburg</div>
-      <div class="preis"><img src="img\preis.svg">Preis</div>
-      <div class="datum"><img src="img\date.svg">Datum</div>
-      <div class="erstellungsdatum"><img src="img\bookmark.svg">Erstellungsdatum</div>
     </div>
-  </div> -->
 </body>
 </html>

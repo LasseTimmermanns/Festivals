@@ -32,7 +32,7 @@
 
         <div class="attribute">
             <label for="preis">Preis</label>
-            <input type="number" id="preis" name="preis" required><br>
+            <input type="decimal" id="preis" name="preis" required><br>
         </div>
 
         <div class="attribute">
