@@ -59,7 +59,6 @@
                 <div class="erstellungsdatum"><img src="img\bookmark.svg">' . $row["erstellungsdatum"] . '</div>
               </div>
             ';
-            
           }
         } else {
           echo "Es finden in nächster Zeit keine Festivals statt..";
