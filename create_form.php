@@ -41,8 +41,11 @@
         </div>
 
         <div class="attribute">
-            <label for="farbe">Anzeigfarbe</label>
-            <input type="color" id="farbe" name="farbe" required><br>
+            <label for="farbe">Anzeigefarbe</label>
+            <div id="farbpicker-wrapper">
+                <input type="color" id="farbe" value="#ff0000" name="farbe" required>
+            </div><br>
+            <script src="scripts/color_picker.js"></script>
         </div>
         <input type="submit" value="Submit">
     </form>
