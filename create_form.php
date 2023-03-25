@@ -39,6 +39,11 @@
             <label for="date">Datum</label>
             <input type="date" id="date" name="date" required><br>
         </div>
+
+        <div class="attribute">
+            <label for="farbe">Anzeigfarbe</label>
+            <input type="color" id="farbe" name="farbe" required><br>
+        </div>
         <input type="submit" value="Submit">
     </form>
     </div>

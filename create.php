@@ -14,8 +14,9 @@ $name = $_POST['name'];
 $ort = $_POST['ort'];
 $preis = $_POST['preis'];
 $date = $_POST['date'];
+$farbe = $_POST['farbe'];
 
-if (empty($name) || empty($ort) || empty($preis) || empty($date)) {
+if (empty($name) || empty($ort) || empty($preis) || empty($date) || empty($farbe)) {
     header("Location: create_form.php");
 }
 
@@ -31,8 +32,8 @@ if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "INSERT INTO festivals (festivalname, ort, preis, datum)
-VALUES ('". $name ."', '". $ort ."', '". $preis ."', '". $date ."')";
+$sql = "INSERT INTO festivals (festivalname, ort, preis, datum, color)
+VALUES ('". $name ."', '". $ort ."', '". $preis ."', '". $date ."', '" . $farbe . "');";
 
 
 if (mysqli_query($conn, $sql)) {
