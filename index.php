@@ -13,6 +13,8 @@
 
 </head>
 <body>
+  <div class="header">Festivals</div>
+
   <div class="wrapper">
     <?php
         function getTextColor($hex) {
