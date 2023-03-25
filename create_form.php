@@ -32,12 +32,20 @@
 
         <div class="attribute">
             <label for="preis">Preis</label>
-            <input type="number" id="preis" name="preis" required><br>
+            <input type="decimal" id="preis" name="preis" required><br>
         </div>
 
         <div class="attribute">
             <label for="date">Datum</label>
             <input type="date" id="date" name="date" required><br>
+        </div>
+
+        <div class="attribute">
+            <label for="farbe">Anzeigefarbe</label>
+            <div id="farbpicker-wrapper">
+                <input type="color" id="farbe" value="#ff0000" name="farbe" required>
+            </div><br>
+            <script src="scripts/color_picker.js"></script>
         </div>
         <input type="submit" value="Submit">
     </form>
