@@ -22,22 +22,22 @@
         
         <div class="attribute">
             <label for="name">Festival name</label>
-            <input type="text" id="name" name="name"><br>
+            <input type="text" id="name" name="name" required><br>
         </div>
 
         <div class="attribute">
             <label for="ort">Ort</label>
-            <input type="text" id="ort" name="ort"><br>
+            <input type="text" id="ort" name="ort" required><br>
         </div>
 
         <div class="attribute">
             <label for="preis">Preis</label>
-            <input type="number" id="preis" name="preis"><br>
+            <input type="number" id="preis" name="preis" required><br>
         </div>
 
         <div class="attribute">
             <label for="date">Datum</label>
-            <input type="date" id="date" name="date"><br>
+            <input type="date" id="date" name="date" required><br>
         </div>
         <input type="submit" value="Submit">
     </form>

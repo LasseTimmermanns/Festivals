@@ -16,7 +16,7 @@ $preis = $_POST['preis'];
 $date = $_POST['date'];
 
 if (empty($name) || empty($ort) || empty($preis) || empty($date)) {
-    header("Location: create.php");
+    header("Location: create_form.php");
 }
 
 $servername = "localhost";
@@ -34,11 +34,7 @@ if (!$conn) {
 $sql = "INSERT INTO festivals (festivalname, ort, preis, datum)
 VALUES ('". $name ."', '". $ort ."', '". $preis ."', '". $date ."')";
 
-if (mysqli_query($conn, $sql)) {
-  echo "New record created successfully";
-} else {
-  echo "Error: " . $sql . "<br>" . mysqli_error($conn);
-}
-
 mysqli_close($conn);
+
+header("Location: create_form.php");
 ?>
