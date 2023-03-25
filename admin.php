@@ -16,12 +16,10 @@
         }
     ?>
 
-    <div class="bigwrapper">
-        <div class="wrapper">
-            <div class="big create"><img src="img/add.svg"></div>
-            <div class="big update"><img src="img/update.svg"></div>
-            <div class="big delete"><img src="img/delete.svg"></div>
-        </div>
+    <div class="wrapper">
+        <div class="big create"><img src="img/add.svg"></div>
+        <div class="big update"><img src="img/update.svg"></div>
+        <div class="big delete"><img src="img/delete.svg"></div>
     </div>
 </body>
 </html>
