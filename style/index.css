@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(196, 196, 196);
+    background-color: #0B4F6C;
     font-family: Rajdhani;
 }
 
@@ -13,7 +13,7 @@ body{
 
 .festival{
     display: grid;
-    background-color: lightgreen;
+    background-color: #01BAEF;
     border-radius: 10px;
     overflow: hidden;
     grid-template-rows: 33% 33% 33%;
@@ -28,7 +28,6 @@ body{
 .festival div{
     display: flex;
     align-items: center;
-    border: 1px solid black;
     padding: 5px;
 }
 
