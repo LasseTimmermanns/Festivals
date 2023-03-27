@@ -31,10 +31,8 @@
           }
         }
 
-        $servername = "localhost";
-        $username = "festival";
-        $password = "YUcrXDm87tMzmSh";
-        $dbname = "festivals";
+        include 'database_config.php';
+        // $dbname = "festivals";
         
         // Create connection
         $conn = mysqli_connect($servername, $username, $password, $dbname);

@@ -20,10 +20,8 @@ if (empty($name) || empty($ort) || empty($preis) || empty($date) || empty($farbe
     header("Location: create_form.php");
 }
 
-$servername = "localhost";
-$username = "festival";
-$password = "YUcrXDm87tMzmSh";
-$dbname = "festivals";
+
+include 'database_config.php';
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);

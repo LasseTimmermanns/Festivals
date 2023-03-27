@@ -10,10 +10,8 @@ if (empty($user_password) || empty($user_name)) {
     header("Location: login_form.php?error_code=1");
 }
 
-$servername = "localhost";
-$username = "festival";
-$password = "YUcrXDm87tMzmSh";
-$dbname = "festivals";
+
+include 'database_config.php';
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
