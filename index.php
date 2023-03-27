@@ -54,7 +54,7 @@
               <div class="festival" style="background:' . $row["color"] . '; color:' . getTextColor($row["color"]) . '">
                 <div class="name">' . $row["festivalname"] . '</div>
                 <div class="ort"><img src="img\location.svg">' . $row["ort"] . '</div>
-                <div class="preis"><img src="img\preis.svg">' . $row["preis"] . '</div>
+                <div class="preis"><img src="img\preis.svg">' . $row["preis"] . '€</div>
                 <div class="datum"><img src="img\date.svg">' . $row["datum"] . '</div>
                 <div class="erstellungsdatum"><img src="img\bookmark.svg">' . $row["erstellungsdatum"] . '</div>
               </div>

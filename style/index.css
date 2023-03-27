@@ -1,5 +1,6 @@
 body{
-    background-color: rgb(36, 36, 36);
+    /* background-color: rgb(36, 36, 36); */
+    background-color: white;
     font-family: Rajdhani;
 }
 
@@ -19,20 +20,18 @@ body{
     font-weight: 500;
 }
 
-
-
 .wrapper{
     width: 80%;
     padding: 0 10% 0 10%;
     display: grid;
-    grid-template-columns: repeat(5, minmax(0,1fr));
+    grid-template-columns: repeat(3, minmax(0,1fr));
     gap: 40px;
 }
 
 .festival{
     display: grid;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 10px;
+    /* border-radius: 10px; */
     overflow: hidden;
     grid-template-rows: 33% 33% 33%;
     grid-template-columns: 50% 50%;
@@ -40,13 +39,13 @@ body{
     "name name" 
     "ort preis" 
     "datum erstellungsdatum";
-    height: 200px;
+    height: 300px;
+    padding: 0 30px 0 30px;
 }
 
 .festival div{
     display: flex;
     align-items: center;
-    padding: 5px;
 }
 
 .festival div img{
@@ -62,16 +61,20 @@ body{
 
 .ort{
     grid-area: ort;
+    font-size: 20px;
 }
 
 .preis{
     grid-area: preis;
+    font-size: 20px;
 }
 
 .datum{
     grid-area: datum;
+    font-size: 20px;
 }
 
 .erstellungsdatum{
     grid-area: erstellungsdatum;
+    font-size: 20px;
 }
