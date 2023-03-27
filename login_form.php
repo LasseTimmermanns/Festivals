@@ -11,28 +11,6 @@
 
 <div class="center">
   <h1>Willkommen!</h1>
-        <?php
-            if(isset($_GET["error_code"])){ 
-                
-
-                    $error_code = $_GET["error_code"];
-
-                    switch ($error_code) {
-                        case 0:
-                            echo "<h4>Falsche Anfragmethode</h4>";
-                            break;
-                        case 1:
-                            echo "<h4>Bitte fülle die Felder aus!</h4>";
-                            break;
-                        case 2:
-                            echo "<h4>Falscher Benutzername</h4>";
-                            break;
-                        case 3:
-                            echo "<h4>Falsches Passwort</h4>";
-                            break;
-                }
-            }
-        ?>
   <form method="POST" action="login.php">
     <div class="inputbox">
       <input type="text" name="username" required="required">

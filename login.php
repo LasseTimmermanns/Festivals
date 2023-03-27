@@ -1,13 +1,13 @@
 <?php
 
 if ($_SERVER["REQUEST_METHOD"] != "POST") {
-    header("Location: login_form.php?error_code=0");
+    header("Location: login_form.php");
 }
 
 $user_name = $_POST['username'];
 $user_password = $_POST['passwort'];
 if (empty($user_password) || empty($user_name)) {
-    header("Location: login_form.php?error_code=1");
+    header("Location: login_form.php");
 }
 
 
@@ -24,7 +24,7 @@ $sql = "SELECT passwort FROM users WHERE username='" . $user_name . "';";
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) == 0) {
-    header("Location: login_form.php?error_code=2");
+    header("Location: login_form.php");
 }
 
 while($row = mysqli_fetch_assoc($result)) {
@@ -34,7 +34,7 @@ while($row = mysqli_fetch_assoc($result)) {
         $_SESSION["loggedin"] = "true";
         header("Location: admin.php");
     }else{
-        header("Location: login_form.php?error_code=3");
+        header("Location: login_form.php");
     }
 }
 
