@@ -1,0 +1,88 @@
+body{
+    /* background-color: rgb(36, 36, 36); */
+    background-color: white;
+    font-family: Rajdhani;
+}
+
+.header{
+    width: 100vw;
+    text-align: center;
+    height: 70px;
+    color: white;
+    font-size: 36px;
+    font-family: Rajdhani;
+    background-color: rgb(245, 188, 31);
+    margin-bottom: 30px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.wrapper{
+    width: 80%;
+    padding: 0 10% 0 10%;
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0,1fr));
+    gap: 10px;
+}
+
+.festival{
+    display: grid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    /* border-radius: 10px; */
+    overflow: hidden;
+    grid-template-columns: 20% 20% 10% 20% 20% 10%;
+    grid-template-areas: 
+    "name ort preis datum erstellungsdatum save";
+    height: 50px;
+    padding: 0 30px 0 30px;
+}
+
+.festival input{
+    width: 50%;
+    height: 80%;
+
+}
+
+.festival div{
+    display: flex;
+    align-items: center;
+}
+
+.festival div img{
+    margin-right: 10px;
+}
+
+.name{
+    grid-area: name;
+    text-align: center;
+    justify-content: center;
+    font-size: 28px;
+}
+
+.ort{
+    grid-area: ort;
+    font-size: 20px;
+}
+
+.preis{
+    grid-area: preis;
+    font-size: 20px;
+}
+
+.datum{
+    grid-area: datum;
+    font-size: 20px;
+}
+
+.erstellungsdatum{
+    grid-area: erstellungsdatum;
+    font-size: 20px;
+}
+
+.save{
+    grid-area: save;
+    font-size: 20px;
+}
