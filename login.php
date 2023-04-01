@@ -24,17 +24,19 @@ $sql = "SELECT passwort FROM users WHERE username='" . $user_name . "';";
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) == 0) {
-    header("Location: login_form.php");
+    // header("Location: login_form.php");
+    header("Location: login_form.php?lol=true");
 }
 
 while($row = mysqli_fetch_assoc($result)) {
     if($user_password == $row["passwort"]){
         // Eingeloggt 
         session_start();
-        $_SESSION["loggedin"] = "true";
+        $_SESSION["username"] = $user_name;
+        $_SESSION["password"] = $user_password;
         header("Location: admin.php");
     }else{
-        header("Location: login_form.php");
+        header("Location: login_form.php?lol=false");
     }
 }
 

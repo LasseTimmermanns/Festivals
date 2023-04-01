@@ -1,3 +1,4 @@
+<?php include 'stayloggedin.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,12 +10,7 @@
     <link rel="stylesheet" href="style/admin.css">
 </head>
 <body>
-    <?php
-        session_start();
-        if(!(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == "true")){
-            header("Location: login_form.php");          
-        }
-    ?>
+    
 
     <div class="wrapper">
         <div class="big create" onclick="location.href='create_form.php';"><img src="img/add.svg"></div>

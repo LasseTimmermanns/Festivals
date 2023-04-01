@@ -1,10 +1,4 @@
-<?php
-    session_start();
-    if(!(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == "true")){
-        header("Location: login_form.php");          
-    }
-?>
-
+<?php include 'stayloggedin.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
