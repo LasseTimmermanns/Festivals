@@ -11,12 +11,9 @@
     <link rel="stylesheet" href="style/admin.css">
 </head>
 <body>
-    
-
     <div class="wrapper">
         <div class="big create" onclick="location.href='create_form.php';"><img src="img/add.svg"></div>
         <div class="big update" onclick="location.href='edit_interface.php';"><img src="img/update.svg"></div>
-        <div class="big delete" onclick="location.href='#';"><img src="img/delete.svg"></div>
     </div>
 </body>
 </html>
