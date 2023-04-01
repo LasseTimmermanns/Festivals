@@ -1,10 +1,4 @@
-<?php
-    session_start();
-    if(!(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] == "true")){
-        header("Location: login_form.php");   
-        exit;       
-    }
-?>
+<?php include 'stayloggedin.php'; ?>
 
 <?php
 if ($_SERVER["REQUEST_METHOD"] != "POST") {
@@ -12,15 +6,27 @@ if ($_SERVER["REQUEST_METHOD"] != "POST") {
     exit;
 }
 
+$id = $_GET['id'];
+$sql = "";
+
+if(isset($_POST["delete"])){
+  $sql = "DELETE FROM festivals WHERE id=". $id;
+}else{
+
 $name = $_POST['name'];
 $ort = $_POST['ort'];
 $preis = $_POST['preis'];
 $date = $_POST['date'];
-$id = $_GET['id'];
 
 if (empty($name) || empty($ort) || empty($preis) || empty($date)) {
     header("Location: edit_interface.php");
     exit;
+}
+
+$sql = "UPDATE festivals SET festivalname='" . $name . "', 
+            ort='" . $ort . "', 
+            preis='" . $preis . "', 
+            datum='" . $date . "' WHERE id=" . $id;
 }
 
 
@@ -33,10 +39,6 @@ if (!$conn) {
   die("Connection failed: " . mysqli_connect_error());
 }
 
-$sql = "UPDATE festivals SET festivalname='" . $name . "', 
-            ort='" . $ort . "', 
-            preis='" . $preis . "', 
-            datum='" . $date . "' WHERE id=" . $id;
 
 if (mysqli_query($conn, $sql)) {
     echo "New record created successfully";

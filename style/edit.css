@@ -40,8 +40,11 @@ body{
     padding: 0 30px 0 30px;
 }
 
-.festival input{
-    width: 50%;
+.festival input[type="text"], .festival input[type="date"], .festival input[type="decimal"]{
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 3px;
+    border: 0;
     height: 80%;
 
 }
@@ -85,4 +88,23 @@ body{
 .save{
     grid-area: save;
     font-size: 20px;
+}
+
+
+.savebtn{
+    background-color: orange;
+    color: white;
+    border: 0;
+    width: 80%;
+    border-radius: 3px;
+    height: 80%;
+}
+
+.deletebtn{
+    background-color: red;
+    color: white;
+    border: 0;
+    width: 80%;
+    border-radius: 3px;
+    height: 80%;
 }

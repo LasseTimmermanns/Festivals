@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/edit.css">
+    <link rel="stylesheet" href="style/general.css">
 </head>
 <body>
 <div class="header">Editieren</div>
@@ -50,7 +52,7 @@
                 <div class="preis"><img src="img\preis.svg"><input type="decimal" name="preis" value="' . $row["preis"] . '">€</div>
                 <div class="datum"><img src="img\date.svg"><input type="date" name="date" value="' . $row["datum"] . '"></div>
                 <div class="erstellungsdatum"><img src="img\bookmark.svg"><input type="date" name="erstellungsdatum" value="' . $row["erstellungsdatum"] . '"></div>
-                <div class="save"><input type="submit" value="save"></div>
+                <div class="save"><input type="submit" value="save" class="savebtn"><input type="submit" value="delete" class="deletebtn" name="delete"></div>
               </form>
             ';
           }
